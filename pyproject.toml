@@ -1,14 +1,28 @@
+[project]
+name = "unique-fridge"
+version = "0.1.1"
+authors = [
+  { name="TheWandrr", email="TheWandrr.Code@gmail.com" },
+]
+description = "Validated BLE client for the characterized portable refrigerator protocol"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = ["bleak>=0.21"]
+license = "MIT"
+license-files = ["LICENSE"]
+
 [build-system]
 requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
-[project]
-name = "unique-fridge"
-version = "0.1.0"
-description = "Validated BLE client for the characterized portable refrigerator protocol"
-requires-python = ">=3.11"
-dependencies = ["bleak>=0.21"]
-
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["unique_fridge*"]
+
+[project.urls]
+Homepage = "https://github.com/TheWandrr/unique_fridge"
+Issues = "https://github.com/TheWandrr/unique_fridge/issues"
